@@ -22,7 +22,7 @@ namespace Stoica_Alexandru_Lab2.Pages.Books
         public IActionResult OnGet()
         {
             ViewData["PublisherId"] = new SelectList(_context.Set<Publisher>(), "ID", "PublisherName");
-            ViewData["AuthorId"] = new SelectList(_context.Set<Author>(), "ID", "LastName");
+            ViewData["AuthorId"] = new SelectList(_context.Set<Author>(), "ID", "FullName");
 
             return Page();
         }

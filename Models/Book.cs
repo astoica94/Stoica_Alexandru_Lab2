@@ -15,6 +15,7 @@ namespace Stoica_Alexandru_Lab2.Models
         [Column(TypeName ="decimal(6, 2)")]
         public decimal Price { get; set; }
         [DataType(DataType.Date)]
+        [Display(Name = "Date of publishing")]
         public DateTime PublishingDate { get; set; }
         public int? PublisherID { get; set; }
         public Publisher? Publisher { get; set; }
