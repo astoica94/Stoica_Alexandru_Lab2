@@ -19,5 +19,7 @@ namespace Stoica_Alexandru_Lab2.Data
         public DbSet<Stoica_Alexandru_Lab2.Models.Publisher>? Publisher { get; set; }
 
         public DbSet<Stoica_Alexandru_Lab2.Models.Author>? Authors { get; set; }
+
+        public DbSet<Stoica_Alexandru_Lab2.Models.Category>? Category { get; set; }
     }
 }
